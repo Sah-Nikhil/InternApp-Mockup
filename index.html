@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternApp</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+<body>
+    <nav id="navbar" class="navbar fixed top-0 left-0 w-full z-50 p-4 transition-colors duration-300 ease-in-out">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Left Side Links -->
+            <div class="hidden md:flex space-x-4 text-xl">
+                <a href="#about" class="text-white hover:bg-blue-700 px-3 py-2 rounded">About</a>
+                <a href="#nearby" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Nearby</a>
+            </div>
+    
+            <!-- Logo -->
+            <div class="flex-1 text-center md:pt-0 pt-1">
+                <a href="#home">
+                    <img src="./media/iaeste.png" alt="Logo" class="h-14 mx-auto">
+                </a>
+            </div>
+    
+            <!-- Right Side Links -->
+            <div class="hidden md:flex space-x-4 text-xl">
+                <a href="#translator" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Translator</a>
+                <a href="#media" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Media</a>
+            </div>
+    
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <a href="#about" class="block text-white hover:bg-blue-700 px-3 py-2 rounded">About</a>
+            <a href="#nearby" class="block text-white hover:bg-blue-700 px-3 py-2 rounded">Nearby</a>
+            <a href="#translator" class="block text-white hover:bg-blue-700 px-3 py-2 rounded">Translator</a>
+            <a href="#media" class="block text-white hover:bg-blue-700 px-3 py-2 rounded">Media</a>
+        </div>
+    </nav>
+
+
+
+    <main>
+        <section id="home" style="background-image: url('./media/homebg.jpg')" class="text-white flex items-center justify-center bg-center bg-cover  min-h-screen md:h-auto ">
+            <div class="container mx-auto text-center">
+                <div class="glass-backdrop">
+                    <h2 class="text-4xl md:text-7xl font-bold mb-4 mt-2">IAESTE Manipal</h2>
+                    <p class="text-xs md:text-2xl font-bold mt-6 mb-2">WORK. EXPERIENCE. DISCOVER.</p>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="flex items-center justify-center min-h-screen md:min-h-96">
+            <div class="container mx-auto text-center mt-4">
+                <div class="glass-backdrop  mb-6">
+                    <h2 class="text-3xl text-namasteManipalPink font-bold">About IAESTE Manipal</h2>
+                </div>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
+                    <!-- Instagram Embed -->
+                    <div class="insta-embed w-full md:w-1/2">
+                    <blockquote class="instagram-media w-full" data-instgrm-permalink="https://www.instagram.com/reel/C-avYb5SMxi/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:100%;">
+                        <!-- Instagram Content will load here -->
+                    </blockquote>
+                    </div>
+                    <!-- Description -->
+                    <div class="des w-full md:w-1/2 text-left p-4 text">
+                        IAESTE India LC Manipal, the flagship student exchange program of Manipal University, is a fully supported student-run organization by Manipal University and its constituent colleges. It has been instrumental in providing a plethora of opportunities for students to enhance their careers by pursuing technical internships abroad since its inception in 2005. International traineeships have successfully been completed in well-reputed firms like Alstom, ABB, Schlumberger, Robert Bosch, Airbus, etc. Additionally, universities like Purdue University, Carnegie Mellon University, Imperial College-London, etc. have accepted students from IAESTE LC Manipal as trainees through the IAESTE Exchange Program.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nearby Section -->
+        <section id="nearby" class="min-h-auto">
+                <div class="carousel">
+                    <!-- list item -->
+                    <div class="list">
+                        <div class="item">
+                            <img src="./media/nearby/nearby3.jpg">
+                            <div class="content">
+                                <div class="around">AROUND MANIPAL</div>
+                                <div class="title">THE SCENIC</div>
+                                <div class="topic">ST. MARY'S ISLES</div>
+                                <div class="des">
+                                    
+                                    Said to have been visited by Vasco da Gama before he docked at Calicut, St. Mary’s Isles were a part of Madagascar millions of years ago. It is accessible by ferry from Malpe Beach.</div>
+                                <div class="buttons">
+                                    <button type="button" onclick="location.href='https://maps.app.goo.gl/gC1hZSrBeSbfQqAm7'">LET'S GO</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./media/nearby/nearby1.jpg">
+                            <div class="content">
+                                <div class="around">AROUND MANIPAL</div>
+                                <div class="title">THE HOLY</div>
+                                <div class="topic">MURUDESHWAR</div>
+                                <div class="des">
+                                    Experience Murudeshwar's tranquil beaches, the grand Shiva statue, and vibrant cultural heritage. Ideal for both peaceful retreats and exciting adventures in a picturesque coastal setting.                                </div>
+                                <div class="buttons">
+                                    <button type="button" onclick="location.href='https://maps.app.goo.gl/Fc5YypvQibMLkmAR7'">LET'S GO</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./media/nearby/nearby2.jpg">
+                            <div class="content">
+                                <div class="around">AROUND MANIPAL</div>
+                                <div class="title">THE CALMING</div>
+                                <div class="topic">KAPU BEACH</div>
+                                <div class="des">
+                                    Kapu Lighthouse and Beach, is a hidden gem nestled along the coastline of Karnataka in the Udupi district. This serene beach is renowned for its pristine sandy shores, azure waters, and the iconic lighthouse that stands tall as a beacon of the past. </div>
+                                <div class="buttons">
+                                    <button type="button" onclick="location.href='https://maps.app.goo.gl/4jeDxWbCxjAs6mZXA'">LET'S GO</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./media/nearby/nearby4.jpg">
+                            <div class="content">
+                                <div class="around">AROUND MANIPAL</div>
+                                <div class="title">RIVER RAFTING AT</div>
+                                <div class="topic">SITANADI</div>
+                                <div class="des">
+                                    Experience the thrill of White Water Rafting at Sitanadi! Conquer exhilarating rapids, immerse yourself in stunning natural scenery, and make unforgettable memories. Perfect for adventure seekers and nature enthusiasts alike.
+                                </div>
+                                <div class="buttons">
+                                    <button type="button" onclick="location.href='https://maps.app.goo.gl/3KSn8sjSfKJh5PgX9'">LET'S GO</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- list thumnail -->
+                    <div class="thumbnail">
+                        <div class="item">
+                            <img src="./media/nearby/nearby3.jpg">
+                            <div class="content">
+                                <div class="title">
+                                    ST. MARY'S ISLES
+                                </div>
+                                <div class="description">
+                                    Boat Ride
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./media/nearby/nearby1.jpg">
+                            <div class="content">
+                                <div class="title">
+                                    MURUDESHWAR
+                                </div>
+                                <div class="description">
+                                    Temple
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./media/nearby/nearby2.jpg">
+                            <div class="content">
+                                <div class="title">
+                                    KAPU BEACH
+                                </div>
+                                <div class="description">
+                                    Sandy Beaches
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./media/nearby/nearby4.jpg">
+                            <div class="content">
+                                <div class="title">
+                                    SITANADI
+                                </div>
+                                <div class="description">
+                                    River Rafting
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- next prev -->
+                    <div class="arrows">
+                        <button id="prev"> < </button>
+                        <button id="next"> > </button>
+                    </div>
+
+                    <!-- time running -->
+                    <div class="time"></div>
+                </div>
+        </section>
+
+        <!-- Translator Section -->
+        <section id="translator" style="background-image: url('./media/iaeste_wordcloud.jpg'); background-position: center; background-size: cover;" class=" bg-gray-300  flex items-center justify-center min-h-screen md:min-h-auto">
+            <div class="mt-8 container mx-auto text-center">
+                <div class="glass-backdrop mb-6">
+                    <h2 class="text-2xl font-bold text-namasteManipalPink drop-shadow-lg text-center">Translator</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <!-- Left Column - Input Text for Translation -->
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-50 p-6 rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Original Text</h3>
+                        <textarea class="w-full h-40 p-4 border-2 border-blue-300 rounded-xl focus:ring-4 focus:ring-blue-400 focus:outline-none bg-white placeholder-blue-400"></textarea>
+                    </div>
+
+                    <!-- Right Column - Translated Text -->
+                    <div class="bg-gradient-to-br from-green-100 to-green-50 p-6 rounded-2xl shadow-2xl hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-semibold mb-4 text-green-800">Translated Text</h3>
+                        <textarea class="w-full h-40 p-4 border-2 border-green-300 rounded-xl focus:ring-4 focus:ring-green-400 focus:outline-none bg-white placeholder-green-400" placeholder="Translation will appear here..." readonly></textarea>
+                    </div>
+                </div>
+                <!-- Google Lens Integration -->
+                <div class="mt-8 mb-10">
+                    <a href="https://lens.google/" target="_blank" class="inline-block bg-namasteManipalPink text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 focus:ring-2 focus:ring-blue-300 focus:outline-none transition duration-300 ease-in-out">
+                        Open Google Lens
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="flex items-center justify-center  min-h-auto md:h-auto">
+            <div class="container mx-auto text-center mt-4 ">
+                <div class="glass-backdrop mb-6">
+                    <h2 class="text-3xl font-bold text-namasteManipalPink">Media</h2>
+                </div>
+                <div class="slider mt-4" style="
+                --width: 400px;
+                /* --height: 300px; */
+                --quantity: 10;">
+                    <div class="list">
+                        <div class="item" style="--position: 1"><img src="media/slider_2.jpg" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="media/slider_1.jpg" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="media/slider_3.jpg" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="media/slider_4.jpg" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="media/slider_5.jpg" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="media/slider_6.jpg" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="media/slider_7.jpg" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="media/slider_8.jpg" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="media/slider_9.jpg" alt=""></div>
+                        <div class="item" style="--position: 10"><img src="media/slider_10.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
