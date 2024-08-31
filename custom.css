@@ -14,7 +14,7 @@ z-index: 9999;
 
 
 .glass-backdrop {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.19);
     backdrop-filter: blur(10px); 
     border-radius: 17px;
     border: 1px solid rgba(255, 255, 255, 0.3); 
@@ -22,8 +22,19 @@ z-index: 9999;
     width: fit-content;
     max-width: 50%; 
     margin: 0 auto; 
+    margin-bottom: 1.5rem;
 }
 
+.glass-backdrop2 {
+  background: rgba(255, 255, 255, 0.19);
+  backdrop-filter: blur(10px); 
+  border-radius: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  padding: 2rem; 
+  width: fit-content;
+  max-width: 50%; 
+  margin: 0 auto; 
+}
 
 /* body{
   margin: 0;
